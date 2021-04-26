@@ -5,7 +5,215 @@
 
         <meta charset="utf-8">
         <title>Sign Up</title>
-        <link rel="stylesheet" href="assets/stylesheets/main.css">
+        <!-- <link rel="stylesheet" href="assets/stylesheets/main.css"> -->
+        <style>
+            /* body {
+                margin: 0;
+                padding: 0;
+            } */
+
+            body {
+                background-color: #eceef1;
+                margin: 0;
+                padding: 0;
+            }
+
+            .sign_in_container {
+                /* background-color: powderblue; */
+                display: block;
+                float: right;
+                /* clear: both; */
+            }
+
+            .logo_container img {
+                background-color: #eceef1;
+                display: block;
+                clear: right;
+                padding-top: 20px;
+                margin: auto auto;
+                padding-bottom: 10px;
+
+                /* position: absolute;
+                top: 1000px; */
+
+                /* float: right; */
+            }
+
+            .form_container {
+                background-color: #ffffff;
+                display: block;
+                text-align: center;
+                width: 375px;
+                margin: auto auto;
+                border: 1px solid #c7c7c7;
+                border-radius: 2px;
+            }
+
+            .form_title {
+                color: #393A3D;
+                font-weight: 400;
+                line-height: 1.1;
+                font-size: 24px;
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                padding-top: 10px;
+            }
+
+            .form_sub_title {
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #393A3D;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.2;
+                margin-bottom: 0px;
+            }
+
+            .learn_more {
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                color: #0077c5;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.2;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            .form_inner_container {
+                padding-top: 10px;
+                padding-left: 30px;
+                text-align: left;
+                font-weight: normal;
+                color: #404040;
+                font-size: 14px;
+            }
+
+            form label {
+                line-height: 25px;
+                margin-bottom: 6px;
+            }
+
+            form input {
+                width: 300px;
+                margin-bottom: 20px;
+            }
+
+            form span {
+                display: block;
+                min-height: 20px;
+                margin-top: -10px;
+                font-size: 10px;
+                color: #444;
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                /* font-size: 14px; */
+                font-weight: normal;
+                line-height: 1.5;
+                text-align: left;
+            }
+
+            form button {
+                background: #0077C5;
+                border-color: #0077C5;
+                color: #FFF;
+                width: 320px;
+                height: 44px;
+                border-radius: 4px;
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                /* font-size: 14px; */
+                font-weight: normal;
+                cursor: pointer;
+                font-size: 1.125em;
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDMTAuNzk1NiAwIDEyLjg5MjkgMi4xODQxNyAxMi45OTYgNS4yNjE1NEwxMyA1LjVWN0gxNEMxNS4xMDQ2IDcgMTYgNy44OTU0MyAxNiA5VjE4QzE2IDE5LjEwNDYgMTUuMTA0NiAyMCAxNCAyMEgyQzAuODk1NDMgMjAgMCAxOS4xMDQ2IDAgMThWOUMwIDcuODk1NDMgMC44OTU0MyA3IDIgN0gzVjUuNUMzIDIuMjk3NjEgNS4xMzI3MiAwIDggMFpNMTQgOUgyVjE4SDE0VjlaTTggMTFDOS4xMDQ1NyAxMSAxMCAxMS44OTU0IDEwIDEzQzEwIDEzLjczOTggOS41OTgyOCAxNC4zODU4IDkuMDAxMDggMTQuNzMxOEw5IDE1LjJDOSAxNS42NDE4IDguNTUyMjggMTYgOCAxNkM3LjQ4NzE2IDE2IDcuMDY0NDkgMTUuNjkxMiA3LjAwNjczIDE1LjI5MzNMNyAxNS4yTDYuOTk5OTMgMTQuNzMyNEM2LjQwMjE3IDE0LjM4NjYgNiAxMy43NDAzIDYgMTNDNiAxMS44OTU0IDYuODk1NDMgMTEgOCAxMVpNOCAyQzYuMzMxNTMgMiA1LjA4ODI2IDMuMjc3NDEgNS4wMDQ1IDUuMjgyNDJMNSA1LjVWN0gxMVY1LjVDMTEgMy4zNzAyOCA5LjcyODA2IDIgOCAyWiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==');
+                background-repeat: no-repeat;
+                /* background-size: cover; */
+                background-position: 80px 10px;
+                line-height: 20px;
+
+
+            }
+
+            button:hover {
+                background: #167CCC;
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDBDMTAuNzk1NiAwIDEyLjg5MjkgMi4xODQxNyAxMi45OTYgNS4yNjE1NEwxMyA1LjVWN0gxNEMxNS4xMDQ2IDcgMTYgNy44OTU0MyAxNiA5VjE4QzE2IDE5LjEwNDYgMTUuMTA0NiAyMCAxNCAyMEgyQzAuODk1NDMgMjAgMCAxOS4xMDQ2IDAgMThWOUMwIDcuODk1NDMgMC44OTU0MyA3IDIgN0gzVjUuNUMzIDIuMjk3NjEgNS4xMzI3MiAwIDggMFpNMTQgOUgyVjE4SDE0VjlaTTggMTFDOS4xMDQ1NyAxMSAxMCAxMS44OTU0IDEwIDEzQzEwIDEzLjczOTggOS41OTgyOCAxNC4zODU4IDkuMDAxMDggMTQuNzMxOEw5IDE1LjJDOSAxNS42NDE4IDguNTUyMjggMTYgOCAxNkM3LjQ4NzE2IDE2IDcuMDY0NDkgMTUuNjkxMiA3LjAwNjczIDE1LjI5MzNMNyAxNS4yTDYuOTk5OTMgMTQuNzMyNEM2LjQwMjE3IDE0LjM4NjYgNiAxMy43NDAzIDYgMTNDNiAxMS44OTU0IDYuODk1NDMgMTEgOCAxMVpNOCAyQzYuMzMxNTMgMiA1LjA4ODI2IDMuMjc3NDEgNS4wMDQ1IDUuMjgyNDJMNSA1LjVWN0gxMVY1LjVDMTEgMy4zNzAyOCA5LjcyODA2IDIgOCAyWiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==');
+                background-repeat: no-repeat;
+                /* background-size: cover; */
+                background-position: 80px 10px;
+            }
+
+            button p {
+                margin-top: 7px;
+            }
+
+            /* footer {
+                background-color: yellow;
+                display: block;
+                /* clear: right; */
+            /* float: right; */
+            .form_subtext {
+                font-size: 12px;
+                font-style: italic;
+                color: #757575;
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                /* font-size: 14px; */
+                font-weight: normal;
+                text-align: center;
+                line-height: 1.5;
+            }
+
+            .link {
+                color: #0077C5;
+            }
+
+            .link:hover,
+            .learn_more:hover,
+            .under_form span:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            .CAPTCHA {
+                background: #ECEEF1;
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                /* font-size: 14px; */
+                font-weight: normal;
+                font-size: 10px;
+                color: #8d9096;
+                padding: 10px;
+                height: 30px;
+            }
+
+            .under_form {
+                font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial sans-serif;
+                text-align: center;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 1.5;
+                color: #505050;
+                padding-top: 30px;
+
+            }
+
+            .under_form_links {
+                margin-left: 4px;
+                margin-right: 4px;
+                /* color: #0077C5; */
+            }
+
+            footer {
+                height: 60px;
+                background-color: #ffffff;
+                cursor: pointer;
+                /* float: left; */
+                color: #0077C5;
+                font-size: 14px;
+                padding-left: 20px;
+                padding-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .under_form p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        </style>
     </head>
 
     <body>
@@ -17,6 +225,72 @@
 
         </header>
 
+
+        <div class="sign_in_container">
+            <img src="/home/alex/Documents/Odin/code/mint_clone/assets/images/sign_in.jpg" alt="Sign In">
+
+
+        </div>
+
+
+        <div class="logo_container">
+            <img src="/home/alex/Documents/Odin/code/mint_clone/assets/images/logo.jpg" alt="Logo">
+        </div>
+
+        <div class="form_container">
+            <P class="form_title">Create an Intuit account</P>
+            <P class="form_sub_title">One account for everything Intuit, including Mint.</P>
+            <a class="learn_more">Learn more</a>
+            <div class="form_inner_container">
+
+                <form>
+                    <label for="email">Email address</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="phone">Phone (recommended)</label><br>
+                    <input type="phone" id="phone" name="phone">
+                    <span>Standard call, messaging or data rates may apply.</span><br>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password"><br>
+                    <button type="submit">
+                        <P>Create Account</P>
+                    </button>
+                </form>
+
+                <p class="form_subtext">By clicking Create Account, you agree to our<br>
+                    <span class="link">Terms</span> and have read and acknowledge our <span class="link">Global
+                        Privacy<br>Statement</span>.
+                </p>
+
+            </div>
+
+            <div class="CAPTCHA">
+                <p>Invisible reCAPTCHA by Google <span class="link">Privacy Policy</span> and <span class="link">Terms
+                        of Use</span>.</p>>
+            </div>
+        </div>
+
+        <div class="under_form">
+            <span class="under_form_links">Legal</span>
+            <span class="under_form_links">Privacy</span>
+            <span class="under_form_links">Security</span>
+            <p>© 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are
+                registered trademarks of Intuit Inc.</p>
+            <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.
+            </p>
+        </div>
+
+
+        <footer>
+            <!-- <nav>
+                  <a href="index.html">Home</a>
+                  <a href="speakers.html">Speakers</a>
+                  <a href="schedule.html">Schedule</a>
+                  <a href="venue.html">Venue</a>
+                  <a href="register.html">Register</a>
+                </nav>
+                <small>&copy; Styles Conference</small> -->
+            <p class="link">Privacy Settings</p>
+        </footer>
 
 
     </body>
